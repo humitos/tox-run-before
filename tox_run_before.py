@@ -1,7 +1,7 @@
+import pluggy
 from os import system
 
-from tox import hookimpl
-
+hookimpl = pluggy.HookimplMarker("tox")
 
 @hookimpl
 def tox_configure(config):
